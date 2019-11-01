@@ -1,12 +1,19 @@
-times = {
-  name: 'Corinthians',
-  points: 10,
-  wingame: 10,
-  losegame: 0,
-  gols: 100
-}
-var btnJogar = document.querySelector('.jogar');
+// points
+// wingame
+// losegame
+// gols
 
-function renderTimes() {
-  var div = document.createElement('div');
-}
+
+gols = [
+  {
+    name: 'Corinthians',
+  },
+  {
+    name: 'Palmeiras',
+  }
+]
+
+gols.forEach(element => {
+  element.gols = Math.ceil(Math.random() * 5);
+});
+
